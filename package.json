@@ -1,0 +1,17 @@
+{
+  "name": "ket-noi-gia-su",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.18.2",
+    "bcryptjs": "2.4.3",
+    "jsonwebtoken": "9.0.2",
+    "cookie-parser": "1.4.6",
+    "uuid": "9.0.1"
+  }
+}

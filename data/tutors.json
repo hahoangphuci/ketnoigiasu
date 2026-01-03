@@ -1,0 +1,452 @@
+[
+  {
+    "id": "p-001",
+    "tutorId": "tutor-001",
+    "subject": "Toán học",
+    "bio": "Thạc sĩ Toán học với 8 năm kinh nghiệm. Chuyên luyện thi đại học và Olympic.",
+    "location": "Quận 1, TP.HCM",
+    "pricePerHour": 200,
+    "availableTimes": [
+      "morning",
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.8,
+    "ratingCount": 24
+  },
+  {
+    "id": "p-002",
+    "tutorId": "tutor-002",
+    "subject": "Tiếng Anh",
+    "bio": "Cử nhân Ngôn ngữ Anh, IELTS 8.0. 5 năm kinh nghiệm dạy IELTS, TOEIC.",
+    "location": "Cầu Giấy, Hà Nội",
+    "pricePerHour": 250,
+    "availableTimes": [
+      "afternoon",
+      "evening"
+    ],
+    "rating": 4.9,
+    "ratingCount": 31
+  },
+  {
+    "id": "p-003",
+    "tutorId": "tutor-003",
+    "subject": "Vật lý",
+    "bio": "Giảng viên ĐH Bách Khoa. 10 năm kinh nghiệm luyện thi đại học khối A.",
+    "location": "Quận 3, TP.HCM",
+    "pricePerHour": 180,
+    "availableTimes": [
+      "morning",
+      "afternoon",
+      "weekend"
+    ],
+    "rating": 4.7,
+    "ratingCount": 18
+  },
+  {
+    "id": "p-004",
+    "tutorId": "tutor-004",
+    "subject": "Hóa học",
+    "bio": "Tiến sĩ Hóa học, giải Nhì Olympic Hóa học quốc gia.",
+    "location": "Thanh Xuân, Hà Nội",
+    "pricePerHour": 220,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.6,
+    "ratingCount": 15
+  },
+  {
+    "id": "p-005",
+    "tutorId": "tutor-001",
+    "subject": "Tin học",
+    "bio": "Lập trình viên 5 năm kinh nghiệm. Dạy Python, JavaScript, C++.",
+    "location": "Quận 7, TP.HCM",
+    "pricePerHour": 300,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.9,
+    "ratingCount": 12
+  },
+  {
+    "id": "p-006",
+    "tutorId": "tutor-005",
+    "subject": "Toán học",
+    "bio": "Giáo viên trường chuyên, 15 năm kinh nghiệm luyện thi HSG.",
+    "location": "Ninh Kiều, Cần Thơ",
+    "pricePerHour": 180,
+    "availableTimes": [
+      "morning",
+      "afternoon"
+    ],
+    "rating": 4.8,
+    "ratingCount": 28
+  },
+  {
+    "id": "p-007",
+    "tutorId": "tutor-006",
+    "subject": "Tiếng Anh",
+    "bio": "Du học sinh Úc, IELTS 8.5. Chuyên dạy Speaking và Writing.",
+    "location": "Ninh Kiều, Cần Thơ",
+    "pricePerHour": 280,
+    "availableTimes": [
+      "afternoon",
+      "evening"
+    ],
+    "rating": 4.9,
+    "ratingCount": 22
+  },
+  {
+    "id": "p-008",
+    "tutorId": "tutor-007",
+    "subject": "Văn học",
+    "bio": "Thạc sĩ Văn học, 12 năm kinh nghiệm. Luyện thi THPT Quốc gia.",
+    "location": "Bình Thủy, Cần Thơ",
+    "pricePerHour": 150,
+    "availableTimes": [
+      "morning",
+      "evening"
+    ],
+    "rating": 4.7,
+    "ratingCount": 35
+  },
+  {
+    "id": "p-009",
+    "tutorId": "tutor-008",
+    "subject": "Sinh học",
+    "bio": "Giảng viên ĐH Y Dược Cần Thơ. Chuyên luyện thi khối B.",
+    "location": "Ninh Kiều, Cần Thơ",
+    "pricePerHour": 200,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.8,
+    "ratingCount": 19
+  },
+  {
+    "id": "p-010",
+    "tutorId": "tutor-009",
+    "subject": "Lịch sử",
+    "bio": "Thạc sĩ Lịch sử, giáo viên trường THPT chuyên.",
+    "location": "Cái Răng, Cần Thơ",
+    "pricePerHour": 140,
+    "availableTimes": [
+      "morning",
+      "afternoon"
+    ],
+    "rating": 4.5,
+    "ratingCount": 16
+  },
+  {
+    "id": "p-011",
+    "tutorId": "tutor-010",
+    "subject": "Địa lý",
+    "bio": "Giáo viên 20 năm kinh nghiệm, chuyên luyện thi HSG Địa lý.",
+    "location": "Ô Môn, Cần Thơ",
+    "pricePerHour": 130,
+    "availableTimes": [
+      "afternoon",
+      "evening"
+    ],
+    "rating": 4.6,
+    "ratingCount": 21
+  },
+  {
+    "id": "p-012",
+    "tutorId": "tutor-011",
+    "subject": "Tiếng Nhật",
+    "bio": "N2, 3 năm du học Nhật. Dạy từ cơ bản đến N3.",
+    "location": "Quận 1, TP.HCM",
+    "pricePerHour": 320,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.9,
+    "ratingCount": 14
+  },
+  {
+    "id": "p-013",
+    "tutorId": "tutor-012",
+    "subject": "Tiếng Hàn",
+    "bio": "TOPIK 6, 4 năm kinh nghiệm. Chuyên luyện thi TOPIK.",
+    "location": "Bình Thạnh, TP.HCM",
+    "pricePerHour": 280,
+    "availableTimes": [
+      "afternoon",
+      "evening"
+    ],
+    "rating": 4.7,
+    "ratingCount": 18
+  },
+  {
+    "id": "p-014",
+    "tutorId": "tutor-013",
+    "subject": "Tiếng Trung",
+    "bio": "HSK 6, giảng viên ĐH Ngoại Ngữ. 8 năm kinh nghiệm.",
+    "location": "Đống Đa, Hà Nội",
+    "pricePerHour": 260,
+    "availableTimes": [
+      "morning",
+      "evening"
+    ],
+    "rating": 4.8,
+    "ratingCount": 25
+  },
+  {
+    "id": "p-015",
+    "tutorId": "tutor-014",
+    "subject": "Piano",
+    "bio": "Tốt nghiệp Nhạc viện TP.HCM. 10 năm dạy piano các cấp độ.",
+    "location": "Phú Nhuận, TP.HCM",
+    "pricePerHour": 400,
+    "availableTimes": [
+      "afternoon",
+      "evening",
+      "weekend"
+    ],
+    "rating": 5,
+    "ratingCount": 32
+  },
+  {
+    "id": "p-016",
+    "tutorId": "tutor-015",
+    "subject": "Guitar",
+    "bio": "Nghệ sĩ guitar acoustic. Dạy từ cơ bản đến nâng cao.",
+    "location": "Gò Vấp, TP.HCM",
+    "pricePerHour": 250,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.8,
+    "ratingCount": 27
+  },
+  {
+    "id": "p-017",
+    "tutorId": "tutor-016",
+    "subject": "Vẽ",
+    "bio": "Họa sĩ, tốt nghiệp ĐH Mỹ Thuật. Dạy vẽ chì, màu nước, sơn dầu.",
+    "location": "Quận 10, TP.HCM",
+    "pricePerHour": 300,
+    "availableTimes": [
+      "morning",
+      "afternoon",
+      "weekend"
+    ],
+    "rating": 4.9,
+    "ratingCount": 20
+  },
+  {
+    "id": "p-018",
+    "tutorId": "tutor-017",
+    "subject": "IELTS",
+    "bio": "8.5 IELTS, giảng viên BC. Cam kết đầu ra 7.0+.",
+    "location": "Hoàn Kiếm, Hà Nội",
+    "pricePerHour": 450,
+    "availableTimes": [
+      "morning",
+      "evening"
+    ],
+    "rating": 4.9,
+    "ratingCount": 45
+  },
+  {
+    "id": "p-019",
+    "tutorId": "tutor-018",
+    "subject": "TOEIC",
+    "bio": "990 TOEIC, 7 năm kinh nghiệm. Cam kết 800+ sau 3 tháng.",
+    "location": "Hai Bà Trưng, Hà Nội",
+    "pricePerHour": 350,
+    "availableTimes": [
+      "afternoon",
+      "evening"
+    ],
+    "rating": 4.8,
+    "ratingCount": 38
+  },
+  {
+    "id": "p-020",
+    "tutorId": "tutor-019",
+    "subject": "SAT",
+    "bio": "Du học sinh Mỹ, SAT 1550. Chuyên luyện SAT Math & Reading.",
+    "location": "Quận 2, TP.HCM",
+    "pricePerHour": 500,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.9,
+    "ratingCount": 15
+  },
+  {
+    "id": "p-021",
+    "tutorId": "tutor-020",
+    "subject": "Python",
+    "bio": "Senior Developer 8 năm. Dạy Python từ cơ bản đến AI/ML.",
+    "location": "Quận 7, TP.HCM",
+    "pricePerHour": 400,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 5,
+    "ratingCount": 28
+  },
+  {
+    "id": "p-022",
+    "tutorId": "tutor-021",
+    "subject": "Java",
+    "bio": "Tech Lead, 10 năm kinh nghiệm. Dạy Java, Spring Boot.",
+    "location": "Tân Bình, TP.HCM",
+    "pricePerHour": 380,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.8,
+    "ratingCount": 22
+  },
+  {
+    "id": "p-023",
+    "tutorId": "tutor-022",
+    "subject": "React",
+    "bio": "Frontend Developer, 5 năm exp. Dạy React, Next.js, TypeScript.",
+    "location": "Cầu Giấy, Hà Nội",
+    "pricePerHour": 420,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.9,
+    "ratingCount": 19
+  },
+  {
+    "id": "p-024",
+    "tutorId": "tutor-023",
+    "subject": "Toán cao cấp",
+    "bio": "Giảng viên ĐH Bách Khoa. Dạy Giải tích, Đại số tuyến tính.",
+    "location": "Ninh Kiều, Cần Thơ",
+    "pricePerHour": 250,
+    "availableTimes": [
+      "morning",
+      "afternoon"
+    ],
+    "rating": 4.7,
+    "ratingCount": 30
+  },
+  {
+    "id": "p-025",
+    "tutorId": "tutor-024",
+    "subject": "Kinh tế vi mô",
+    "bio": "Thạc sĩ Kinh tế, giảng viên ĐH Kinh Tế. 6 năm kinh nghiệm.",
+    "location": "Ninh Kiều, Cần Thơ",
+    "pricePerHour": 220,
+    "availableTimes": [
+      "afternoon",
+      "evening"
+    ],
+    "rating": 4.6,
+    "ratingCount": 17
+  },
+  {
+    "id": "p-026",
+    "tutorId": "tutor-025",
+    "subject": "Kế toán",
+    "bio": "Kế toán trưởng 15 năm. Dạy nguyên lý kế toán, kế toán tài chính.",
+    "location": "Bình Thủy, Cần Thơ",
+    "pricePerHour": 200,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.8,
+    "ratingCount": 24
+  },
+  {
+    "id": "p-027",
+    "tutorId": "tutor-026",
+    "subject": "Tiếng Anh giao tiếp",
+    "bio": "5 năm làm việc tại Singapore. Dạy tiếng Anh giao tiếp thực tế.",
+    "location": "Cái Răng, Cần Thơ",
+    "pricePerHour": 180,
+    "availableTimes": [
+      "morning",
+      "evening"
+    ],
+    "rating": 4.7,
+    "ratingCount": 33
+  },
+  {
+    "id": "p-028",
+    "tutorId": "tutor-027",
+    "subject": "Hóa hữu cơ",
+    "bio": "Tiến sĩ Hóa học, chuyên gia Hóa hữu cơ. Luyện thi Olympic.",
+    "location": "Ba Đình, Hà Nội",
+    "pricePerHour": 280,
+    "availableTimes": [
+      "afternoon",
+      "evening"
+    ],
+    "rating": 4.9,
+    "ratingCount": 16
+  },
+  {
+    "id": "p-029",
+    "tutorId": "tutor-028",
+    "subject": "Vật lý lượng tử",
+    "bio": "Tiến sĩ Vật lý, nghiên cứu sinh tại MIT. Dạy Vật lý đại cương, lượng tử.",
+    "location": "Đống Đa, Hà Nội",
+    "pricePerHour": 350,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 5,
+    "ratingCount": 12
+  },
+  {
+    "id": "p-030",
+    "tutorId": "tutor-029",
+    "subject": "Data Science",
+    "bio": "Data Scientist tại FPT. Dạy Python, SQL, Machine Learning.",
+    "location": "Quận 9, TP.HCM",
+    "pricePerHour": 450,
+    "availableTimes": [
+      "evening",
+      "weekend"
+    ],
+    "rating": 4.9,
+    "ratingCount": 21
+  },
+  {
+    "id": "ae061e6a-7223-44a0-92c7-8ad20853e2e0",
+    "tutorId": "e6d341d9-8e9e-4e86-8b3b-071ad0cba97c",
+    "subject": "Lịch Sử",
+    "bio": "aaa",
+    "location": "Cần Thơ",
+    "pricePerHour": 10000,
+    "availableTimes": [
+      "Tối"
+    ],
+    "rating": 5,
+    "ratingCount": 1
+  },
+  {
+    "id": "1b364294-be34-4878-903d-0fc20a8bf160",
+    "tutorId": "e6d341d9-8e9e-4e86-8b3b-071ad0cba97c",
+    "subject": "Toán rời rạc",
+    "bio": "...",
+    "location": "Cần Thơ",
+    "pricePerHour": 200,
+    "availableTimes": [
+      "Sáng"
+    ],
+    "rating": 0,
+    "ratingCount": 0
+  }
+]

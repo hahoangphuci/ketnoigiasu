@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kết Nối Gia Sư - Nền tảng kết nối giáo dục số 1 Việt Nam</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="Nền tảng kết nối gia sư và học viên hàng đầu Việt Nam. Tìm kiếm, đặt lịch, thanh toán trực tuyến an toàn."
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex between">
+        <h1 class="brand">
+          <i class="fas fa-graduation-cap"></i> Kết Nối Gia Sư
+        </h1>
+        <nav>
+          <button id="nav-home" class="btn ghost">
+            <i class="fas fa-home"></i> Trang chủ
+          </button>
+          <button id="nav-search" class="btn ghost">
+            <i class="fas fa-search"></i> Tìm gia sư
+          </button>
+          <button id="nav-dashboard" class="btn ghost">
+            <i class="fas fa-th-large"></i> Bảng điều khiển
+          </button>
+          <button id="nav-auth" class="btn primary">
+            <i class="fas fa-user"></i> Đăng nhập
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="home">
+        <!-- Hero Section -->
+        <div class="hero-section">
+          <div class="hero-content">
+            <span class="hero-badge"
+              ><i class="fas fa-rocket"></i> Startup Giáo Dục 2026</span
+            >
+            <h1 class="hero-title">
+              Kết nối <span class="gradient-text">Gia sư chất lượng</span> với
+              Học viên
+            </h1>
+            <p class="hero-desc">
+              Nền tảng EdTech tiên phong ứng dụng AI để gợi ý gia sư phù hợp
+              nhất. Đặt lịch linh hoạt, thanh toán an toàn, đánh giá minh bạch.
+            </p>
+            <div class="hero-buttons">
+              <button
+                onclick="show('search');loadTutors();"
+                class="btn primary btn-lg"
+              >
+                <i class="fas fa-search"></i> Tìm gia sư ngay
+              </button>
+              <button
+                onclick="show('auth')"
+                class="btn ghost btn-lg auth-only-btn"
+              >
+                <i class="fas fa-user-plus"></i> Đăng ký miễn phí
+              </button>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-number" id="stat-tutors">50+</span>
+              <span class="stat-label">Gia sư</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number" id="stat-students">200+</span>
+              <span class="stat-label">Học viên</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number" id="stat-sessions">500+</span>
+              <span class="stat-label">Buổi học</span>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number">4.8</span>
+              <span class="stat-label">⭐ Đánh giá</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="card" style="margin-top: 24px">
+          <h2 class="section-title">
+            <i class="fas fa-lightbulb"></i> Tại sao chọn chúng tôi?
+          </h2>
+          <div class="grid four">
+            <div class="feature">
+              <span class="icon">👨‍🏫</span>
+              <h3>Gia sư chất lượng</h3>
+              <p>
+                Đội ngũ gia sư được xác minh, có kinh nghiệm và đánh giá cao từ
+                học viên.
+              </p>
+            </div>
+            <div class="feature">
+              <span class="icon">⚡</span>
+              <h3>Đặt lịch nhanh chóng</h3>
+              <p>
+                Chỉ cần 3 bước để đặt lịch học. Linh hoạt theo thời gian của
+                bạn.
+              </p>
+            </div>
+            <div class="feature">
+              <span class="icon">🔒</span>
+              <h3>Thanh toán an toàn</h3>
+              <p>
+                Tích hợp cổng thanh toán uy tín. Hoàn tiền nếu không hài lòng.
+              </p>
+            </div>
+            <div class="feature">
+              <span class="icon">⭐</span>
+              <h3>Đánh giá minh bạch</h3>
+              <p>
+                Hệ thống review thực từ học viên. Lọc gia sư theo rating dễ
+                dàng.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- How It Works -->
+        <div class="card">
+          <h2 class="section-title">
+            <i class="fas fa-route"></i> Quy trình sử dụng
+          </h2>
+          <div class="steps-container">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+              <h4>Đăng ký tài khoản</h4>
+              <p>Tạo tài khoản miễn phí chỉ trong 30 giây</p>
+            </div>
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-icon"><i class="fas fa-search"></i></div>
+              <h4>Tìm gia sư</h4>
+              <p>Lọc theo môn, giá, thời gian, vị trí</p>
+            </div>
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+              <h4>Đặt lịch & Thanh toán</h4>
+              <p>Chọn thời gian và thanh toán online an toàn</p>
+            </div>
+            <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-icon"><i class="fas fa-star"></i></div>
+              <h4>Học & Đánh giá</h4>
+              <p>Học tập hiệu quả và chia sẻ trải nghiệm</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Tutors -->
+        <div class="card">
+          <h2 class="section-title">
+            <i class="fas fa-award"></i> Gia sư nổi bật
+          </h2>
+          <p style="color: #94a3b8; margin-bottom: 20px">
+            Được học viên đánh giá cao nhất trên nền tảng
+          </p>
+          <div id="featured-tutors" class="grid three"></div>
+          <div style="text-align: center; margin-top: 20px">
+            <button onclick="show('search');loadTutors();" class="btn primary">
+              <i class="fas fa-arrow-right"></i> Xem tất cả gia sư
+            </button>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="card">
+          <h2 class="section-title">
+            <i class="fas fa-comments"></i> Học viên nói gì?
+          </h2>
+          <div class="testimonials-grid">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>
+                  "Nhờ Kết Nối Gia Sư, con tôi đã tiến bộ từ 5 điểm lên 8.5 điểm
+                  Toán chỉ sau 2 tháng. Rất hài lòng!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">P</div>
+                <div>
+                  <strong>Chị Phương</strong>
+                  <span>Phụ huynh học sinh lớp 12</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>
+                  "Nền tảng rất dễ sử dụng. Tôi đã tìm được gia sư IELTS phù hợp
+                  và đạt 7.5 sau 3 tháng học."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">M</div>
+                <div>
+                  <strong>Minh Anh</strong>
+                  <span>Sinh viên năm 3</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>
+                  "Là gia sư, tôi thấy nền tảng giúp tôi tiếp cận nhiều học viên
+                  hơn và quản lý lịch dạy hiệu quả."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">T</div>
+                <div>
+                  <strong>Thầy Tuấn</strong>
+                  <span>Gia sư Toán - Lý</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section auth-only-btn">
+          <h2>Sẵn sàng nâng cao kết quả học tập?</h2>
+          <p>Tham gia cùng hàng nghìn học viên và gia sư trên nền tảng</p>
+          <div class="hero-buttons">
+            <button onclick="show('auth')" class="btn primary btn-lg">
+              <i class="fas fa-rocket"></i> Bắt đầu miễn phí
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="search" class="card hidden">
+        <h2><i class="fas fa-search"></i> Tìm kiếm gia sư</h2>
+        <p>Khám phá danh sách gia sư phù hợp với nhu cầu học tập của bạn.</p>
+        <div class="filters">
+          <input
+            id="f-subject"
+            placeholder="🔤 Môn học (vd: Toán, Lý, Hóa...)"
+          />
+          <input
+            id="f-location"
+            placeholder="📍 Vị trí (vd: Quận 1, Hà Nội...)"
+          />
+          <input
+            id="f-min"
+            type="number"
+            min="0"
+            placeholder="💰 Giá từ (nghìn)"
+          />
+          <input
+            id="f-max"
+            type="number"
+            min="0"
+            placeholder="💰 Giá đến (nghìn)"
+          />
+          <select id="f-time">
+            <option value="">⏰ Thời gian</option>
+            <option value="morning">🌅 Sáng (6h-12h)</option>
+            <option value="afternoon">🌤️ Chiều (12h-18h)</option>
+            <option value="evening">🌙 Tối (18h-22h)</option>
+            <option value="weekend">📆 Cuối tuần</option>
+          </select>
+          <select id="f-rating">
+            <option value="0">⭐ Đánh giá tối thiểu</option>
+            <option value="3">⭐⭐⭐ 3+</option>
+            <option value="4">⭐⭐⭐⭐ 4+</option>
+          </select>
+          <button id="btn-search" class="btn primary">
+            <i class="fas fa-search"></i> Tìm ngay
+          </button>
+        </div>
+        <div id="results" class="list"></div>
+      </section>
+
+      <section id="dashboard" class="card hidden">
+        <h2><i class="fas fa-th-large"></i> Bảng điều khiển</h2>
+        <div id="user-info"></div>
+        <div id="stats-area" class="stats-grid"></div>
+
+        <div class="grid two">
+          <div class="panel tutor-only-panel">
+            <h3><i class="fas fa-id-card"></i> Hồ sơ gia sư</h3>
+            <p style="color: #64748b; margin-bottom: 16px; font-size: 14px">
+              Chỉ dành cho tài khoản gia sư
+            </p>
+            <div id="my-profiles"></div>
+            <div id="tutor-form-area">
+              <div class="form-grid" style="margin-top: 16px">
+                <input id="p-subject" placeholder="📚 Môn dạy" />
+                <input
+                  id="p-price"
+                  type="number"
+                  min="0"
+                  placeholder="💵 Giá/giờ (nghìn VND)"
+                />
+                <input
+                  id="p-location"
+                  placeholder="📍 Vị trí dạy (VD: Quận 1, TP.HCM)"
+                  style="grid-column: span 2"
+                />
+                <div style="grid-column: span 2">
+                  <label
+                    style="
+                      color: #a5b4fc;
+                      font-size: 14px;
+                      display: block;
+                      margin-bottom: 12px;
+                    "
+                  >
+                    <i class="fas fa-clock"></i> Khung giờ có thể dạy (chọn ít
+                    nhất 1)
+                  </label>
+                  <div class="time-checkboxes">
+                    <label class="time-checkbox">
+                      <input
+                        type="checkbox"
+                        id="p-time-morning"
+                        value="morning"
+                      />
+                      <span>🌅 Buổi sáng (7h-12h)</span>
+                    </label>
+                    <label class="time-checkbox">
+                      <input
+                        type="checkbox"
+                        id="p-time-afternoon"
+                        value="afternoon"
+                      />
+                      <span>☀️ Buổi chiều (13h-17h)</span>
+                    </label>
+                    <label class="time-checkbox">
+                      <input
+                        type="checkbox"
+                        id="p-time-evening"
+                        value="evening"
+                      />
+                      <span>🌙 Buổi tối (18h-21h)</span>
+                    </label>
+                    <label class="time-checkbox">
+                      <input
+                        type="checkbox"
+                        id="p-time-weekend"
+                        value="weekend"
+                      />
+                      <span>📅 Cuối tuần (T7, CN)</span>
+                    </label>
+                  </div>
+                </div>
+                <textarea
+                  id="p-bio"
+                  placeholder="📝 Giới thiệu bản thân, kinh nghiệm giảng dạy..."
+                  style="grid-column: span 2"
+                ></textarea>
+                <button
+                  id="btn-create-profile"
+                  class="btn success"
+                  style="grid-column: span 2"
+                >
+                  <i class="fas fa-plus-circle"></i> Thêm hồ sơ mới
+                </button>
+              </div>
+              <div id="profile-status" class="muted"></div>
+            </div>
+          </div>
+          <div class="panel">
+            <h3><i class="fas fa-calendar-check"></i> Buổi học của tôi</h3>
+            <div id="my-sessions" class="list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="auth" class="card hidden">
+        <h2><i class="fas fa-user-circle"></i> Đăng nhập / Đăng ký</h2>
+        <p>Tham gia cộng đồng kết nối gia sư và học viên lớn nhất Việt Nam.</p>
+        <div class="grid two">
+          <div class="panel">
+            <h3><i class="fas fa-user-plus"></i> Đăng ký mới</h3>
+            <div class="form-grid">
+              <input id="r-name" placeholder="👤 Họ và tên" />
+              <input id="r-email" placeholder="📧 Email" />
+              <input
+                id="r-password"
+                type="password"
+                placeholder="🔒 Mật khẩu"
+              />
+              <select id="r-role">
+                <option value="student">🎓 Học viên</option>
+                <option value="tutor">👨‍🏫 Gia sư</option>
+              </select>
+              <button
+                id="btn-register"
+                class="btn primary"
+                style="grid-column: span 2"
+              >
+                <i class="fas fa-user-plus"></i> Đăng ký ngay
+              </button>
+            </div>
+            <div id="register-status" class="muted"></div>
+          </div>
+          <div class="panel">
+            <h3><i class="fas fa-sign-in-alt"></i> Đăng nhập</h3>
+            <div class="form-grid">
+              <input
+                id="l-email"
+                placeholder="📧 Email"
+                style="grid-column: span 2"
+              />
+              <input
+                id="l-password"
+                type="password"
+                placeholder="🔒 Mật khẩu"
+                style="grid-column: span 2"
+              />
+              <button
+                id="btn-login"
+                class="btn primary"
+                style="grid-column: span 2"
+              >
+                <i class="fas fa-sign-in-alt"></i> Đăng nhập
+              </button>
+            </div>
+            <div id="login-status" class="muted"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content card modal-wide">
+        <button class="modal-close-x" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3><i class="fas fa-calendar-plus"></i> Đặt lịch học</h3>
+        <div id="modal-tutor-info"></div>
+
+        <!-- Layout ngang: Form đặt lịch bên trái, Thanh toán bên phải -->
+        <div class="booking-layout">
+          <!-- Cột trái: Form đặt lịch -->
+          <div class="booking-form-section">
+            <div class="form-grid">
+              <div style="grid-column: span 2">
+                <label
+                  style="
+                    color: #a5b4fc;
+                    font-size: 14px;
+                    display: block;
+                    margin-bottom: 8px;
+                  "
+                >
+                  <i class="fas fa-calendar"></i> Chọn ngày học
+                </label>
+                <input id="m-date" type="date" style="width: 100%" />
+              </div>
+              <div style="grid-column: span 2">
+                <label
+                  style="
+                    color: #a5b4fc;
+                    font-size: 14px;
+                    display: block;
+                    margin-bottom: 8px;
+                  "
+                >
+                  <i class="fas fa-clock"></i> Chọn giờ bắt đầu
+                </label>
+                <select id="m-time" style="width: 100%">
+                  <option value="">-- Chọn ngày trước --</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  style="
+                    color: #a5b4fc;
+                    font-size: 14px;
+                    display: block;
+                    margin-bottom: 8px;
+                  "
+                >
+                  <i class="fas fa-hourglass-half"></i> Số giờ học
+                </label>
+                <input
+                  id="m-duration"
+                  type="number"
+                  min="1"
+                  max="4"
+                  value="1"
+                  style="width: 100%"
+                />
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: flex-end;
+                  color: #94a3b8;
+                  font-size: 14px;
+                  padding-bottom: 12px;
+                "
+              >
+                giờ (tối đa 4 giờ)
+              </div>
+              <button
+                id="m-book"
+                class="btn primary"
+                style="grid-column: span 2"
+              >
+                <i class="fas fa-check-circle"></i> Xác nhận đặt lịch
+              </button>
+            </div>
+            <div id="m-status" class="muted" style="margin-top: 12px"></div>
+          </div>
+
+          <!-- Cột phải: Thanh toán (hiện sau khi xác nhận) -->
+          <div id="payment-form" class="payment-section hidden">
+            <h4 style="color: #a5b4fc; margin-bottom: 16px">
+              <i class="fas fa-wallet"></i> Thanh toán
+            </h4>
+
+            <div class="payment-compact">
+              <!-- QR Code -->
+              <div class="qr-compact">
+                <div class="qr-code-small">
+                  <img
+                    id="qr-image"
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=KetNoiGiaSu_Payment"
+                    alt="QR Code"
+                  />
+                </div>
+                <p class="qr-label">
+                  <i class="fas fa-mobile-alt"></i> Quét mã
+                </p>
+
+                <!-- Phương thức thanh toán -->
+                <div class="payment-methods-compact">
+                  <label class="method-btn selected" data-method="momo">
+                    <input
+                      type="radio"
+                      name="pay-method"
+                      value="momo"
+                      checked
+                      hidden
+                    />
+                    <span class="m-icon momo">M</span>
+                  </label>
+                  <label class="method-btn" data-method="zalopay">
+                    <input
+                      type="radio"
+                      name="pay-method"
+                      value="zalopay"
+                      hidden
+                    />
+                    <span class="m-icon zalopay">Z</span>
+                  </label>
+                  <label class="method-btn" data-method="vnpay">
+                    <input
+                      type="radio"
+                      name="pay-method"
+                      value="vnpay"
+                      hidden
+                    />
+                    <span class="m-icon vnpay">VN</span>
+                  </label>
+                  <label class="method-btn" data-method="bank">
+                    <input type="radio" name="pay-method" value="bank" hidden />
+                    <span class="m-icon bank"
+                      ><i class="fas fa-university"></i
+                    ></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Thông tin chuyển khoản + Chi phí -->
+              <div class="payment-details-compact">
+                <div class="bank-info-compact">
+                  <div class="info-row">
+                    <span>Ngân hàng:</span><strong>Vietcombank</strong>
+                  </div>
+                  <div class="info-row">
+                    <span>STK:</span
+                    ><strong
+                      class="copy-text"
+                      onclick="navigator.clipboard.writeText('1234567890')"
+                      >1234567890 <i class="fas fa-copy"></i
+                    ></strong>
+                  </div>
+                  <div class="info-row">
+                    <span>Chủ TK:</span><strong>KẾT NỐI GIA SƯ</strong>
+                  </div>
+                  <div class="info-row">
+                    <span>Nội dung:</span
+                    ><strong class="highlight" id="bank-content">GS_XXX</strong>
+                  </div>
+                </div>
+
+                <div class="fee-summary-compact">
+                  <div class="fee-row">
+                    <span>Phí buổi học:</span><span id="pay-subtotal">0k</span>
+                  </div>
+                  <div class="fee-row">
+                    <span>Phí dịch vụ (5%):</span><span id="pay-fee">0k</span>
+                  </div>
+                  <div class="fee-row total">
+                    <span>Tổng:</span><span id="pay-total">0k</span>
+                  </div>
+                </div>
+
+                <button id="btn-pay" class="btn success" style="width: 100%">
+                  <i class="fas fa-check-circle"></i> Xác nhận đã thanh toán
+                </button>
+                <button
+                  id="btn-cancel-pay"
+                  class="btn ghost"
+                  style="width: 100%; margin-top: 8px"
+                >
+                  <i class="fas fa-arrow-left"></i> Quay lại
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="detail-modal" class="modal hidden">
+      <div class="modal-content card" style="max-width: 600px">
+        <div id="tutor-detail-content"></div>
+        <button
+          id="detail-close"
+          class="btn ghost"
+          style="width: 100%; margin-top: 16px"
+        >
+          <i class="fas fa-times"></i> Đóng
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3><i class="fas fa-graduation-cap"></i> Kết Nối Gia Sư</h3>
+            <p>
+              Nền tảng kết nối học viên với gia sư chất lượng hàng đầu Việt Nam.
+              Học tập hiệu quả, tiến bộ mỗi ngày.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Liên kết</h4>
+            <a href="#" onclick="show('home')">Trang chủ</a>
+            <a href="#" onclick="show('search');loadTutors()">Tìm gia sư</a>
+            <a href="#" onclick="show('auth')">Đăng ký</a>
+          </div>
+          <div class="footer-links">
+            <h4>Hỗ trợ</h4>
+            <a href="#">Hướng dẫn sử dụng</a>
+            <a href="#">Câu hỏi thường gặp</a>
+            <a href="#">Liên hệ</a>
+          </div>
+          <div class="footer-links">
+            <h4>Liên hệ</h4>
+            <p><i class="fas fa-envelope"></i> support@ketnoigiasu.vn</p>
+            <p><i class="fas fa-phone"></i> 1900 1234</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Kết Nối Gia Sư. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

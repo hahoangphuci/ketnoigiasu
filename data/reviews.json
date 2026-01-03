@@ -1,0 +1,47 @@
+[
+  {
+    "id": "review-001",
+    "tutorId": "tutor-001",
+    "studentId": "student-001",
+    "sessionId": "session-001",
+    "rating": 5,
+    "comment": "Thầy dạy rất dễ hiểu, giải thích chi tiết từng bước. Con tôi đã tiến bộ rõ rệt sau 2 tháng học.",
+    "createdAt": "2025-12-15T10:30:00.000Z"
+  },
+  {
+    "id": "review-002",
+    "tutorId": "tutor-002",
+    "studentId": "student-002",
+    "sessionId": "session-002",
+    "rating": 5,
+    "comment": "Cô Hương rất nhiệt tình và kiên nhẫn. Phát âm chuẩn, có nhiều tips học IELTS hiệu quả.",
+    "createdAt": "2025-12-20T14:00:00.000Z"
+  },
+  {
+    "id": "review-003",
+    "tutorId": "tutor-003",
+    "studentId": "student-001",
+    "sessionId": "session-003",
+    "rating": 4,
+    "comment": "Thầy Nam giảng bài hay, có nhiều ví dụ thực tế. Hơi nhanh một chút nhưng overall rất tốt.",
+    "createdAt": "2025-12-22T09:00:00.000Z"
+  },
+  {
+    "id": "review-004",
+    "tutorId": "tutor-001",
+    "studentId": "student-002",
+    "sessionId": "session-004",
+    "rating": 5,
+    "comment": "Đã học với thầy Minh 6 tháng. Từ 5 điểm Toán nay đã được 8.5. Cảm ơn thầy rất nhiều!",
+    "createdAt": "2025-12-28T16:00:00.000Z"
+  },
+  {
+    "id": "aad1a71f-736b-4cad-ad5a-a730deed6128",
+    "tutorId": "e6d341d9-8e9e-4e86-8b3b-071ad0cba97c",
+    "studentId": "0c25edf2-33fe-487e-9a54-00241ffd6b38",
+    "sessionId": "d6ed4834-2883-4031-b6f5-a266cc2cdb50",
+    "rating": 5,
+    "comment": "Rất hài lòng!",
+    "createdAt": "2026-01-03T06:34:42.410Z"
+  }
+]
